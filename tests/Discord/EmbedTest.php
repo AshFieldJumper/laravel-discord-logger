@@ -1,11 +1,11 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests\Discord;
+namespace AshFieldJumper\DiscordLogger\Tests\Discord;
 
 use Illuminate\Support\Str;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Discord\Embed;
-use MarvinLabs\DiscordLogger\Tests\TestCase;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Discord\Embed;
+use AshFieldJumper\DiscordLogger\Tests\TestCase;
 use function strlen;
 
 class EmbedTest extends TestCase

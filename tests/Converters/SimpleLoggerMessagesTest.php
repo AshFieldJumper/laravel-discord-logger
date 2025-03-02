@@ -1,12 +1,12 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests\Converters;
+namespace AshFieldJumper\DiscordLogger\Tests\Converters;
 
 use DateTime;
 use Exception;
-use MarvinLabs\DiscordLogger\Contracts\RecordToMessage;
-use MarvinLabs\DiscordLogger\Converters\SimpleRecordConverter;
-use MarvinLabs\DiscordLogger\Tests\Support\MessageAssertions;
+use AshFieldJumper\DiscordLogger\Contracts\RecordToMessage;
+use AshFieldJumper\DiscordLogger\Converters\SimpleRecordConverter;
+use AshFieldJumper\DiscordLogger\Tests\Support\MessageAssertions;
 
 class SimpleLoggerMessagesTest extends AbstractLoggerMessagesTest
 {

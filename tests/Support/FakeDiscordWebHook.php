@@ -1,12 +1,12 @@
 <?php
 
 
-namespace MarvinLabs\DiscordLogger\Tests\Support;
+namespace AshFieldJumper\DiscordLogger\Tests\Support;
 
 
 use function is_array;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Discord\Message;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Discord\Message;
 use PHPUnit\Framework\Assert;
 
 class FakeDiscordWebHook implements DiscordWebHook
@@ -17,7 +17,7 @@ class FakeDiscordWebHook implements DiscordWebHook
     /** @var array */
     private $sentMessages = [];
 
-    /** @var \MarvinLabs\DiscordLogger\Discord\Message|null */
+    /** @var \AshFieldJumper\DiscordLogger\Discord\Message|null */
     private $lastMessageSent;
 
     public function __construct(string $url)

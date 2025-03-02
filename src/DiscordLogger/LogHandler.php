@@ -1,12 +1,12 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger;
+namespace AshFieldJumper\DiscordLogger;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Container\Container;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Contracts\RecordToMessage;
-use MarvinLabs\DiscordLogger\Converters\SimpleRecordConverter;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Contracts\RecordToMessage;
+use AshFieldJumper\DiscordLogger\Converters\SimpleRecordConverter;
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Logger as Monolog;
 use Monolog\LogRecord;
@@ -15,10 +15,10 @@ use function class_implements;
 
 class LogHandler extends AbstractProcessingHandler
 {
-    /** @var \MarvinLabs\DiscordLogger\Contracts\DiscordWebHook */
+    /** @var \AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook */
     private $discord;
 
-    /** @var \MarvinLabs\DiscordLogger\Contracts\RecordToMessage */
+    /** @var \AshFieldJumper\DiscordLogger\Contracts\RecordToMessage */
     private $recordToMessage;
 
     /** @var boolean */

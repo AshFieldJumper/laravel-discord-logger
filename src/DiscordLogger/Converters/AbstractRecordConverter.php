@@ -1,13 +1,13 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Converters;
+namespace AshFieldJumper\DiscordLogger\Converters;
 
 use Illuminate\Contracts\Config\Repository;
 use function in_array;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Contracts\RecordToMessage;
-use MarvinLabs\DiscordLogger\Discord\Exceptions\ConfigurationIssue;
-use MarvinLabs\DiscordLogger\Discord\Message;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Contracts\RecordToMessage;
+use AshFieldJumper\DiscordLogger\Discord\Exceptions\ConfigurationIssue;
+use AshFieldJumper\DiscordLogger\Discord\Message;
 use Throwable;
 
 abstract class AbstractRecordConverter implements RecordToMessage
@@ -21,7 +21,7 @@ abstract class AbstractRecordConverter implements RecordToMessage
     }
 
     /**
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\ConfigurationIssue
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\ConfigurationIssue
      */
     protected function stackTraceMode(string $stacktrace): string
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests;
+namespace AshFieldJumper\DiscordLogger\Tests;
 
 use Monolog\Logger;
 use function config;

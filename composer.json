@@ -1,5 +1,5 @@
 {
-    "name": "marvinlabs/laravel-discord-logger",
+    "name": "ashfieldjumper/laravel-discord-logger",
     "description": "Logging to a discord channel in Laravel",
     "keywords": [
         "laravel",
@@ -30,18 +30,18 @@
     },
     "autoload": {
         "psr-4": {
-            "MarvinLabs\\DiscordLogger\\": "src/DiscordLogger"
+            "AshFieldJumper\\DiscordLogger\\": "src/DiscordLogger"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MarvinLabs\\DiscordLogger\\Tests\\": "tests"
+            "AshFieldJumper\\DiscordLogger\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MarvinLabs\\DiscordLogger\\ServiceProvider"
+                "AshFieldJumper\\DiscordLogger\\ServiceProvider"
             ]
         }
     },

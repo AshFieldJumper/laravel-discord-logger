@@ -1,13 +1,13 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger;
+namespace AshFieldJumper\DiscordLogger;
 
 use GuzzleHttp\Client;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Discord\GuzzleWebHook;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Discord\GuzzleWebHook;
 use Illuminate\Support\Str;
 
 class ServiceProvider extends BaseServiceProvider

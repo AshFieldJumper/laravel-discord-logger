@@ -1,12 +1,12 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests\Discord;
+namespace AshFieldJumper\DiscordLogger\Tests\Discord;
 
 use Illuminate\Support\Str;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Discord\Embed;
-use MarvinLabs\DiscordLogger\Discord\Message;
-use MarvinLabs\DiscordLogger\Tests\TestCase;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Discord\Embed;
+use AshFieldJumper\DiscordLogger\Discord\Message;
+use AshFieldJumper\DiscordLogger\Tests\TestCase;
 
 class MessageTest extends TestCase
 {

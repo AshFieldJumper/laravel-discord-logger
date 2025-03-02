@@ -1,18 +1,18 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests\Converters;
+namespace AshFieldJumper\DiscordLogger\Tests\Converters;
 
 use DateTime;
-use MarvinLabs\DiscordLogger\Contracts\RecordToMessage;
-use MarvinLabs\DiscordLogger\Tests\Support\MessageAssertions;
-use MarvinLabs\DiscordLogger\Tests\TestCase;
+use AshFieldJumper\DiscordLogger\Contracts\RecordToMessage;
+use AshFieldJumper\DiscordLogger\Tests\Support\MessageAssertions;
+use AshFieldJumper\DiscordLogger\Tests\TestCase;
 use Monolog\Logger;
 use Throwable;
 use function json_encode;
 
 abstract class AbstractLoggerMessagesTest extends TestCase
 {
-    /** @var \MarvinLabs\DiscordLogger\Contracts\RecordToMessage */
+    /** @var \AshFieldJumper\DiscordLogger\Contracts\RecordToMessage */
     protected $converter;
 
     /** @var \Illuminate\Contracts\Config\Repository */

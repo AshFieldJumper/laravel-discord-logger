@@ -1,6 +1,6 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Discord\Exceptions;
+namespace AshFieldJumper\DiscordLogger\Discord\Exceptions;
 
 use Exception;
 use GuzzleHttp\Exception\ClientException;

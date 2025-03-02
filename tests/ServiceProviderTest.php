@@ -1,10 +1,10 @@
 <?php
 
 
-namespace MarvinLabs\DiscordLogger\Tests;
+namespace AshFieldJumper\DiscordLogger\Tests;
 
 
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
 
 class ServiceProviderTest extends TestCase
 {

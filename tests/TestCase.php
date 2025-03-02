@@ -1,8 +1,8 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests;
+namespace AshFieldJumper\DiscordLogger\Tests;
 
-use MarvinLabs\DiscordLogger\ServiceProvider;
+use AshFieldJumper\DiscordLogger\ServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase

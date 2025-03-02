@@ -1,6 +1,6 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger;
+namespace AshFieldJumper\DiscordLogger;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Container\Container;

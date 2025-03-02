@@ -1,17 +1,17 @@
 # Laravel Discord Logger
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/marvinlabs/laravel-discord-logger.svg?style=flat-square)](https://packagist.org/packages/marvinlabs/laravel-discord-logger)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ashfieldjumper/laravel-discord-logger.svg?style=flat-square)](https://packagist.org/packages/ashfieldjumper/laravel-discord-logger)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt/marvinlabs/laravel-discord-logger.svg?style=flat-square)](https://packagist.org/packages/marvinlabs/laravel-discord-logger)
+[![Total Downloads](https://img.shields.io/packagist/dt/ashfieldjumper/laravel-discord-logger.svg?style=flat-square)](https://packagist.org/packages/ashfieldjumper/laravel-discord-logger)
 
-`marvinlabs/laravel-discord-logger` is a laravel package providing a logging handler to send logs to a Discord channel. 
+`ashfieldjumper/laravel-discord-logger` is a laravel package providing a logging handler to send logs to a Discord channel. 
 
 ## Installation
 
 You can install the package via composer:
 
 ``` bash
-composer require marvinlabs/laravel-discord-logger
+composer require ashfieldjumper/laravel-discord-logger
 ```
 
 If you are using Laravel 5.5 or later, the service provider will automatically be discovered. 
@@ -22,14 +22,14 @@ On earlier versions, you need to do that manually. You must install the service 
 // config/app.php
 'providers' => [
     ...
-    MarvinLabs\DiscordLogger\ServiceProvider::class
+    AshFieldJumper\DiscordLogger\ServiceProvider::class
 ];
 ```
 
 You can then publish the configuration file:
 
 ``` bash
-php artisan vendor:publish --provider "MarvinLabs\DiscordLogger\ServiceProvider"
+php artisan vendor:publish --provider "AshFieldJumper\DiscordLogger\ServiceProvider"
 ```
 
 ## Setup
@@ -48,7 +48,7 @@ You must add a new channel to your `config/logging.php` file:
     //...
     'discord' => [
         'driver' => 'custom',
-        'via'    => MarvinLabs\DiscordLogger\Logger::class,
+        'via'    => AshFieldJumper\DiscordLogger\Logger::class,
         'level'  => 'debug',
         'url'    => env('LOG_DISCORD_WEBHOOK_URL'),
         'ignore_exceptions' => env('LOG_DISCORD_IGNORE_EXCEPTIONS', false),

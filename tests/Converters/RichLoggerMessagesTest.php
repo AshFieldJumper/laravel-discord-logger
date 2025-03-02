@@ -1,11 +1,11 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests\Converters;
+namespace AshFieldJumper\DiscordLogger\Tests\Converters;
 
 use Exception;
-use MarvinLabs\DiscordLogger\Contracts\RecordToMessage;
-use MarvinLabs\DiscordLogger\Converters\RichRecordConverter;
-use MarvinLabs\DiscordLogger\Tests\Support\MessageAssertions;
+use AshFieldJumper\DiscordLogger\Contracts\RecordToMessage;
+use AshFieldJumper\DiscordLogger\Converters\RichRecordConverter;
+use AshFieldJumper\DiscordLogger\Tests\Support\MessageAssertions;
 use function json_encode;
 use const JSON_PRETTY_PRINT;
 

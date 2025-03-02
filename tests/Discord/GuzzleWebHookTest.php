@@ -1,6 +1,6 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests\Discord;
+namespace AshFieldJumper\DiscordLogger\Tests\Discord;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
@@ -8,9 +8,9 @@ use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use MarvinLabs\DiscordLogger\Discord\GuzzleWebHook;
-use MarvinLabs\DiscordLogger\Discord\Message;
-use MarvinLabs\DiscordLogger\Tests\TestCase;
+use AshFieldJumper\DiscordLogger\Discord\GuzzleWebHook;
+use AshFieldJumper\DiscordLogger\Discord\Message;
+use AshFieldJumper\DiscordLogger\Tests\TestCase;
 use function explode;
 use function json_decode;
 
@@ -19,7 +19,7 @@ class GuzzleWebHookTest extends TestCase
     /** @var array */
     private $httpHistory;
 
-    /** @var \MarvinLabs\DiscordLogger\Contracts\DiscordWebHook */
+    /** @var \AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook */
     private $discord;
 
     protected function setUp(): void

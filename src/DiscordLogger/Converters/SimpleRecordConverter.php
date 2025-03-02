@@ -1,14 +1,14 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Converters;
+namespace AshFieldJumper\DiscordLogger\Converters;
 
-use MarvinLabs\DiscordLogger\Discord\Exceptions\ConfigurationIssue;
-use MarvinLabs\DiscordLogger\Discord\Message;
+use AshFieldJumper\DiscordLogger\Discord\Exceptions\ConfigurationIssue;
+use AshFieldJumper\DiscordLogger\Discord\Message;
 
 class SimpleRecordConverter extends AbstractRecordConverter
 {
     /**
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\ConfigurationIssue
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\ConfigurationIssue
      */
     public function buildMessages(array $record): array
     {
@@ -30,7 +30,7 @@ class SimpleRecordConverter extends AbstractRecordConverter
     }
 
     /**
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\ConfigurationIssue
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\ConfigurationIssue
      */
     protected function addMessageStacktrace(Message $message, array $record): void
     {

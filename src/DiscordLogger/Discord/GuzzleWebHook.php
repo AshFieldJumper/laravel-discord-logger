@@ -1,13 +1,13 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Discord;
+namespace AshFieldJumper\DiscordLogger\Discord;
 
 use Exception;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Exception\ClientException;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Discord\Exceptions\InvalidMessage;
-use MarvinLabs\DiscordLogger\Discord\Exceptions\MessageCouldNotBeSent;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Discord\Exceptions\InvalidMessage;
+use AshFieldJumper\DiscordLogger\Discord\Exceptions\MessageCouldNotBeSent;
 
 class GuzzleWebHook implements DiscordWebHook
 {
@@ -29,8 +29,8 @@ class GuzzleWebHook implements DiscordWebHook
     }
 
     /**
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\InvalidMessage
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\MessageCouldNotBeSent
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\InvalidMessage
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\MessageCouldNotBeSent
      */
     public function send(Message $message): void
     {
@@ -57,7 +57,7 @@ class GuzzleWebHook implements DiscordWebHook
     }
 
     /**
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\InvalidMessage
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\InvalidMessage
      */
     protected function buildPayload(Message $message): array
     {
@@ -75,7 +75,7 @@ class GuzzleWebHook implements DiscordWebHook
     }
 
     /**
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\InvalidMessage
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\InvalidMessage
      */
     protected function buildJsonPayload(Message $message): array
     {
@@ -88,7 +88,7 @@ class GuzzleWebHook implements DiscordWebHook
     }
 
     /**
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\InvalidMessage
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\InvalidMessage
      */
     protected function buildMultipartPayload(Message $message): array
     {

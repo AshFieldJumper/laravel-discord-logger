@@ -14,10 +14,10 @@ return [
      * The converter to use to turn a log record into a discord message
      *
      * Bundled converters:
-     * - \MarvinLabs\DiscordLogger\Converters\SimpleRecordConverter::class
-     * - \MarvinLabs\DiscordLogger\Converters\RichRecordConverter::class
+     * - \AshFieldJumper\DiscordLogger\Converters\SimpleRecordConverter::class
+     * - \AshFieldJumper\DiscordLogger\Converters\RichRecordConverter::class
      */
-    'converter'  => \MarvinLabs\DiscordLogger\Converters\RichRecordConverter::class,
+    'converter'  => \AshFieldJumper\DiscordLogger\Converters\RichRecordConverter::class,
 
     /**
      * If enabled, stacktraces will be attached as files. If not, stacktraces will be directly printed out in the

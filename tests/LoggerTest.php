@@ -1,21 +1,21 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests;
+namespace AshFieldJumper\DiscordLogger\Tests;
 
 use DateTime;
 use InvalidArgumentException;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Logger;
-use MarvinLabs\DiscordLogger\Tests\Support\FakeDiscordWebHook;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Logger;
+use AshFieldJumper\DiscordLogger\Tests\Support\FakeDiscordWebHook;
 use RuntimeException;
 
 class LoggerTest extends TestCase
 {
 
-    /** @var \MarvinLabs\DiscordLogger\Tests\Support\FakeDiscordWebHook */
+    /** @var \AshFieldJumper\DiscordLogger\Tests\Support\FakeDiscordWebHook */
     private $discordFake;
 
-    /** @var \MarvinLabs\DiscordLogger\Logger */
+    /** @var \AshFieldJumper\DiscordLogger\Logger */
     private $logger;
 
     /** @var \Monolog\Logger */

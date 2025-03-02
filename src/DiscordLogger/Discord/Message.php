@@ -1,10 +1,10 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Discord;
+namespace AshFieldJumper\DiscordLogger\Discord;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Support\Str;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
 
 class Message implements Arrayable
 {
@@ -23,7 +23,7 @@ class Message implements Arrayable
     /** @var array */
     public $file;
 
-    /** @var array Array of \MarvinLabs\DiscordLogger\Discord\Embed objects */
+    /** @var array Array of \AshFieldJumper\DiscordLogger\Discord\Embed objects */
     public $embeds;
 
     /** Static factory method */

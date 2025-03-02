@@ -1,19 +1,19 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Tests\Discord;
+namespace AshFieldJumper\DiscordLogger\Tests\Discord;
 
 use GuzzleHttp\Client as HttpClient;
 use Illuminate\Support\Facades\Config;
-use MarvinLabs\DiscordLogger\Discord\Embed;
-use MarvinLabs\DiscordLogger\Discord\GuzzleWebHook;
-use MarvinLabs\DiscordLogger\Discord\Message;
-use MarvinLabs\DiscordLogger\Tests\TestCase;
+use AshFieldJumper\DiscordLogger\Discord\Embed;
+use AshFieldJumper\DiscordLogger\Discord\GuzzleWebHook;
+use AshFieldJumper\DiscordLogger\Discord\Message;
+use AshFieldJumper\DiscordLogger\Tests\TestCase;
 use PHPUnit\Framework\SkippedTestError;
 
 /** @group RequiresNetwork */
 class LiveClientTest extends TestCase
 {
-    /** @var \MarvinLabs\DiscordLogger\Discord\GuzzleWebHook */
+    /** @var \AshFieldJumper\DiscordLogger\Discord\GuzzleWebHook */
     private $client;
 
     protected function setUp(): void

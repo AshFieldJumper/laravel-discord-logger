@@ -1,17 +1,17 @@
 <?php
 
-namespace MarvinLabs\DiscordLogger\Converters;
+namespace AshFieldJumper\DiscordLogger\Converters;
 
 use Illuminate\Support\Arr;
-use MarvinLabs\DiscordLogger\Contracts\DiscordWebHook;
-use MarvinLabs\DiscordLogger\Discord\Embed;
-use MarvinLabs\DiscordLogger\Discord\Exceptions\ConfigurationIssue;
-use MarvinLabs\DiscordLogger\Discord\Message;
+use AshFieldJumper\DiscordLogger\Contracts\DiscordWebHook;
+use AshFieldJumper\DiscordLogger\Discord\Embed;
+use AshFieldJumper\DiscordLogger\Discord\Exceptions\ConfigurationIssue;
+use AshFieldJumper\DiscordLogger\Discord\Message;
 
 class RichRecordConverter extends AbstractRecordConverter
 {
     /**
-     * @throws \MarvinLabs\DiscordLogger\Discord\Exceptions\ConfigurationIssue
+     * @throws \AshFieldJumper\DiscordLogger\Discord\Exceptions\ConfigurationIssue
      */
     public function buildMessages(array $record): array
     {
