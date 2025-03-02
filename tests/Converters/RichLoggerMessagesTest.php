@@ -27,7 +27,7 @@ class RichLoggerMessagesTest extends AbstractLoggerMessagesTest
         MessageAssertions::assertMessagePartialMatch([
             'embeds' => [
                 0 => ['title'       => ':poop: `[2000-01-01 12:13:14] Laravel.WARNING`',
-                      'description' => ':black_small_square: `This is a test`',
+                      'description' => ' `This is a test`',
                       'color'       => 0x123456],
                 1 => ['description' => "**Context**\n`" . json_encode(['foo' => 'bar'], JSON_PRETTY_PRINT) . '`',
                       'color'       => 0x123456,],
@@ -97,7 +97,7 @@ class RichLoggerMessagesTest extends AbstractLoggerMessagesTest
         MessageAssertions::assertMessagePartialMatch([
             'embeds' => [
                 0 => ['title'       => ':flushed: `[2000-01-01 12:13:14] Laravel.WARNING`',
-                      'description' => ':black_small_square: `' . $embedDescription],
+                      'description' => ' `' . $embedDescription],
             ],
         ], $messages[0]);
 
@@ -119,7 +119,7 @@ class RichLoggerMessagesTest extends AbstractLoggerMessagesTest
         MessageAssertions::assertMessagePartialMatch([
             'embeds' => [
                 0 => ['title'       => ':flushed: `[2000-01-01 12:13:14] Laravel.WARNING`',
-                      'description' => ':black_small_square: `' . $description . '`'],
+                      'description' => ' `' . $description . '`'],
             ],
         ], $messages[0]);
 

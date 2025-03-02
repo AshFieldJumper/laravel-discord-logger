@@ -61,7 +61,7 @@ class RichRecordConverter extends AbstractRecordConverter
         $message->embed(Embed::make()
             ->color($this->getRecordColor($record))
             ->title($emoji === null ? "`$title`" : "$emoji `$title`")
-            ->description($emoji === null ? "`$description`" : ":black_small_square: `$description`"));
+            ->description($emoji === null ? "`$description`" : " `$description`"));
     }
 
     protected function addContextEmbed(Message $message, array $record): void
